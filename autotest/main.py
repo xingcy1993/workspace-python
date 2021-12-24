@@ -116,7 +116,10 @@ class auto_test(ParametrizedTestCase):
 if __name__ == '__main__':
     # 初始化
     list_testCaseData = []    #测试用例列表
-    fileName = r"E:\workspace-python\app_testcase.xlsx"  # 测试报告excel文件路径
+    if 'win' in sys.platform:
+        fileName = r"E:\workspace-python\app_testcase.xlsx"  # 测试报告excel文件路径
+    else:
+        fileName = r'/data/git/workspace-python/app_testcase.xlsx'
     # 获取测试用例数据列表
     excelutil = ExcelUtil(fileName)
     list_testCaseData = excelutil.ExcelUtil_read(fileName)
