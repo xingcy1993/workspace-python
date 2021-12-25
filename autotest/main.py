@@ -127,6 +127,7 @@ if __name__ == '__main__':
     path_scr = sys.path[0]
     now = time.strftime("%Y-%m-%d-%H %M %S", time.localtime(time.time()))
     report_path = path_scr + '\\' + 'report' + '\\' + now + '.html'
+    print(report_path)
     # 执行用例
     with open(report_path, 'wb') as report:
         # 创建suit对象
