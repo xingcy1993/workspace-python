@@ -129,7 +129,7 @@ if __name__ == '__main__':
     if 'win' in sys.platform:
         report_path = path_scr + '\\' + 'report' + '\\' + now + '.html'
     else:
-        report_path = path_scr + '//' + 'report' + '//' + now + '.html'
+        report_path = '/data/git/report' + '//' + now + '.html'
     print(report_path)
     # 执行用例
     with open(report_path, 'wb') as report:
