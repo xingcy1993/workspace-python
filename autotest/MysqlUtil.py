@@ -99,8 +99,7 @@ class MysqlUtil:
             #初始化
             flag = False   #是否落库成功
             if 'win' in sys.platform:
-                #host = 'localhost'
-                host = '192.168.233.1'
+                host = 'localhost'
             else:
                 host = '192.168.233.1'
             user = 'root'
